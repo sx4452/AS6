@@ -1,5 +1,5 @@
 function ModifyData
-InputFile = fopen('Product_Info_2.csv');
+InputFile = fopen('Test_Product_Info_2.csv');
 %OutputFile = fopen('New_Product_Info_2.csv');
 InputData = textscan(InputFile,'%s');
 InputData = InputData{1,1};
@@ -33,7 +33,7 @@ for i = 1:FileSize(1)
     end
 %    fprintf(OutputFile,'%s\n',InputData(i,:));  
 end
-csvwrite('New_Product_Info_2.csv', InputData);
+csvwrite('New_Test_Product_Info_2.csv', InputData);
 fclose(InputFile);
 %fclose(OutputFile);
 disp('InputFile complete');
